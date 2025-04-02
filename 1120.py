@@ -1,1 +1,1 @@
-print(int(input())//2)
+print(len("print(int(input())>>1)"))
