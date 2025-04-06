@@ -1,0 +1,5 @@
+a, b, c = map(int, input().split())
+d = abs(b - a)
+e = abs(c - b)
+f = abs(c - a)
+print(d + e + f - max(d, e, f) - min(d, e, f) - 1)
