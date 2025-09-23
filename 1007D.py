@@ -1,9 +1,14 @@
-N,A,D = map(int,input().split())
-result = []
-j = A
+N= int(input())
+result = [1]
+j0 = 0
+j1 = 1
 for i in range(N):
-    result.append(j)
-    j *= D
+    j2 = j1
+    j1 = j1 + j0
+    j0 = j2
+
+    result.append(j1)
+    
 
 for i in result:
     print(i,end=' ')
